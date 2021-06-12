@@ -1,0 +1,24 @@
+.modal__question , .affiche {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog{
+    width: 200%;
+}
+
+
+
+.solution4 {
+    color: #fff;
+}
+
+.fa-check {
+    color: forestgreen;
+}
+
+.fa-times{
+    color: #dc3545;
+}
+

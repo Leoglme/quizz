@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/054fdad312.js"></script>
+</head>
+<body>
+<div class="container">
+
+<!--    // modal Question/réponse-->
+    <div class="modal modal__question d-block" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quel question c'est ?</h5>
+                </div>
+                <div class="modal-body">
+                    <label class="btn btn-lg btn-primary btn-block">
+                        <input type="radio" name="q_answer" value="1">
+                        <span class="solution1 ml-3">solution1</span>
+                    </label>
+                    <label class="element-animation2 btn btn-lg btn-danger btn-block">
+                        <input type="radio" name="q_answer" value="2">
+                        <span class="solution2 ml-3">solution2</span>
+                    </label>
+                    <label class="element-animation3 btn btn-lg btn-info btn-block">
+                        <input type="radio" name="q_answer" value="3">
+                        <span class="solution3 ml-3">solution3</span>
+                    </label>
+                    <label class="element-animation4 btn btn-lg btn-warning btn-block">
+                        <input type="radio" name="q_answer" value="4">
+                        <span class="solution4 ml-3">solution4</span>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <li class="compteur list-group-item mr-auto">0 / 8</li>
+                    <li class="list-group-item mr-auto">
+                        <i class="fas fa-check mr-2"> 0</i>
+                        <i class="fas fa-times ml-2"> 0</i>
+                    </li>
+                    <button type="button" class="next__question btn btn-success">Question Suivante</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--    modal fin du quiz/résultat-->
+    <div class="modal modal__response" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="ml-auto mr-auto">Résultat !</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Fin du quiz</h4>
+                        <p>Tu es arrivé à la fin du quiz, merci d'avoir joué !<br>Tu peux apercevoir ton résultat juste en dessous.</p>
+                        <hr>
+                        <p class="score mb-3"></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="restart btn btn-success">Recommencer le quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
